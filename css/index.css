@@ -203,3 +203,76 @@ section {
     width: 100%;
     max-width: 300px; /* Ajusta a un tamaño aceptable */
 }
+
+/* Sección de Servicios */
+.services {
+    display: flex;
+    flex-direction: column; /* Coloca el encabezado arriba de las cartas */
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.section-header-services {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #d8b4f2;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%; /* Ocupa el ancho completo para centrar las cartas */
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid #d8b4f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 250px; /* Ajusta el ancho máximo para una mejor visualización */
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease; /* Animación suave al pasar el mouse */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 16px;
+    color: #757575;
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 45%; /* Dos cartas por fila en pantallas medianas */
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        width: 22%; /* Cuatro cartas por fila en pantallas grandes */
+    }
+}
