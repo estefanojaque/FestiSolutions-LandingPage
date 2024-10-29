@@ -44,3 +44,37 @@ nav ul li a {
     color: white;
     font-weight: bold;
 }
+/* Sección principal */
+.principal-images {
+    display: flex;
+    margin: 20px 0;
+}
+
+.principal-images img {
+    width: 35%;
+}
+
+.central-text {
+    text-align: center;
+}
+
+.central-box {
+    display: inline-block;
+    background-color: #d8b4f2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.info-box {
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+}
