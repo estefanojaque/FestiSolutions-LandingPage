@@ -324,3 +324,56 @@ section {
 .download-buttons img {
     width: 120px; /* Tamaño de los botones de descarga */
 }
+/*Seccion footer*/
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: left; /* Alineación a la izquierda */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    flex: 1; /* Deja que el logo ocupe el espacio disponible */
+}
+
+.social-media-container {
+    text-align: right;
+}
+
+.social-media-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px; /* Espacio entre íconos */
+}
+
+.social-media-icons li {
+    margin: 0;
+}
+
+.social-media-icons a img {
+    width: 24px; /* Tamaño de los íconos */
+    transition: transform 0.3s ease;
+}
+
+.social-media-icons a:hover img {
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor */
+}
+
+p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #757575;
+}
