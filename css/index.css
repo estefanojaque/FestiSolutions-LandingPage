@@ -276,3 +276,51 @@ section {
         width: 22%; /* Cuatro cartas por fila en pantallas grandes */
     }
 }
+
+/*Seccion Download */
+.download {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-header-download {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #d8b4f2;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.download-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Limita el ancho máximo para una mejor visualización */
+}
+
+.download-content img {
+    max-width: 100%;
+    width: 350px; /* Tamaño de la imagen */
+    margin-right: 20px;
+}
+
+.download-content p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    max-width: 300px; /* Ancho máximo del texto */
+}
+
+.download-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.download-buttons img {
+    width: 120px; /* Tamaño de los botones de descarga */
+}
