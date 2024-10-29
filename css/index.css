@@ -78,3 +78,36 @@ nav ul li a {
     text-align: center;
     font-weight: bold;
 }
+
+/* Sección de Identidad, Misión y Visión*/
+
+.separator {
+    width: 20%;
+    height: 5px;
+    background-color: #d8b4f2;
+    margin:  auto;
+    border-radius: 100px;
+}
+
+section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px; 
+}
+
+.section-header-imv {
+    flex: 1;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    font-weight: bold;
+    color: #d8b4f2;
+    padding: 10px;
+}
+
+.section-content {
+    flex: 2;
+    font-size: 18px;
+    padding: 10px;
+}
