@@ -1,5 +1,6 @@
 # FestiSolutions<br>
--LandingPageIntegrantes:<br> 
+-LandingPage<br>
+Integrantes:<br> 
 Arenas Yataco, Luis Fernando. (U202319381)<br>
 Estabridis Gonzales, Claudia Alessandra. (U202013964)<br>
 Huerta Cárcamo, César Ángel. (U20231E202)<br>
