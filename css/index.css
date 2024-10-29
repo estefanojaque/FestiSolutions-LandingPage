@@ -111,3 +111,51 @@ section {
     font-size: 18px;
     padding: 10px;
 }
+/* Sección de Planificacion y Organizacion segura de eventos */
+.planning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.section-header-planif {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #d8b4f2;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.planning-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centra verticalmente el contenido y la imagen */
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho máximo de la sección */
+}
+
+.planning-content-1, .planning-content-2 {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+}
+
+.content-container-planif {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%; /* Ajusta al 50% del contenedor */
+}
+
+.images-planif {
+    display: flex;
+    justify-content: start;
+    width: 50%; /* Ajusta el ancho para centrar mejor */
+}
+
+.planif-image {
+    width: 100%;
+    max-width: 700px; /* Ajusta a un tamaño aceptable */
+}
