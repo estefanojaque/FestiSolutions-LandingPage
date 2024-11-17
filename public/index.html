@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Celebra</title>
+        <link rel="stylesheet" href="assets/styles/styles.css">
+
+        <!-- Incluir el CSS de Leaflet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+        <!-- Incluir el JavaScript de Leaflet -->
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+        <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
+
+    </head>
+    <body>
+        <header>
+            <div class="left-header">
+                <img class="logo-image" width="80" src="assets/images/logo1.png" alt="Evento al aire libre con mesas y candelabros">
+                <p class="logotext-header">Celebra</p>
+            </div>
+            <div class="rigth-header">
+                <nav>
+                    <ul class="sections">
+                        <li><a data-i18n="in1" href="#about">Acerca de Nosotros</a></li>
+                        <li><a data-i18n="in2" href="#beneficios">Beneficios</a></li>
+                        <li><a data-i18n="in3" href="#services">Servicios</a></li>
+                        <li><a data-i18n="in5" href="#Mapa de Nuestros Proovedores">Mapa de Nuestros Proovedores</a></li>
+                        <li><a data-i18n="in4" href="#download">Descargar app</a></li>
+                    </ul>
+                    
+                </nav>
+            </div>
+            <div>
+                <select id="languageSwitcher">
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                        </select>
+            </div>
+        </header>
+        <main>
+            <!-- Sección principal -->
+             
+            <section id="about" class="principal-images">
+                <img  src="assets/images/event1.png" alt="Evento al aire libre con mesas y candelabros">
+                <img  src="assets/images/event2.png" alt="Fiesta infantil con decoraciones">
+                <img  src="assets/images/event3.png" alt="Evento elegante en interiores">
+            </section>
+            <div class="central-text">
+                <div data-i18n="prin1" class="central-box">
+                    Conecta con los mejores proveedores y planifica tu evento de forma segura y sin complicaciones.
+                </div>
+            </div>
+            <section class="info">
+                <div data-i18n="prin2" class="info-box">
+                    Contratos claros y verificación de identidad para tu tranquilidad.
+                </div>
+                <div data-i18n="prin3" class="info-box">
+                    Conéctate con profesionales seleccionados según tus preferencias para un evento memorable.
+                </div>
+                <div data-i18n="prin4" class="info-box">
+                    Cubre todas tus celebraciones: bodas, fiestas infantiles y más.
+                </div>
+            </section>
+            <!-- Sección de Identidad, Misión y Visión -->
+            <div class="separator"></div>
+            <section  class="identity">
+                <div data-i18n="ims1" class="section-header-imv">¿Quiénes somos?</div>
+                <div data-i18n="ims2" class="section-content">
+                    Somos una plataforma innovadora que conecta a personas y proveedores para crear celebraciones memorables.
+                </div>
+            </section>
+            
+            <section class="mission">
+                <div data-i18n="ims3" class="section-header-imv">Misión</div>
+                <div data-i18n="ims4" class="section-content">
+                    Simplificar el proceso de búsqueda y selección, garantizando opciones personalizadas y una experiencia excepcional.
+                </div>
+            </section>
+            
+            <section class="vision">
+                <div data-i18n="ims5" class="section-header-imv">Visión</div>
+                <div data-i18n="ims6" class="section-content">
+                    Aspiramos a ser líderes en la industria de planificación de eventos, combinando tradición y tecnología.
+                </div>
+            </section>
+        <div id="beneficios" class="separator"></div>
+        <!-- Sección de Planificacion y Organizacion segura de eventos -->
+        <section  class="planning">
+            <div data-i18n="benef1" class="section-header-planif">Planificación y organización segura de eventos</div>
+            <div class="planning-content">
+                <div class="content-container-planif">
+                    <div data-i18n="benef2" class="planning-content-1">
+                        Al crear tu contrato, podrás conocer todos los detalles del proveedor elegido, garantizando una experiencia segura y confiable. 
+                    </div>
+                    <div data-i18n="benef3" class="planning-content-2">
+                        Confirma tu identidad con tu DNI, asegurando que todo esté en orden para ambas partes. Nuestros proveedores son empresas verificadas que presentan su RUC para registrarse, lo que te asegura que estás trabajando con compañías reales y de confianza.
+                    </div>
+                </div>
+                <div class="images-planif">
+                    <img src="assets/images/planif complet.png" class="planif-image">
+                </div>
+            </div>  
+        </section>
+        <div class="separator"></div>
+        <!-- Sección de proovedores expertos -->
+        <section class="provider">
+            <div data-i18n="prov1" class="section-header-provider">Proveedores expertos asignados a tus necesidades</div>
+            <div class="provider-content">
+                <div class="content-container-provider">
+                    <div data-i18n="prov2" class="provider-content-1"> 
+                        Nuestros proveedores son cuidadosamente seleccionados según tus preferencias y el tipo de evento que deseas.
+                    </div>
+                    <div data-i18n="prov3" class="provider-content-2">
+                    Desde el primer momento en que creas tu evento, te conectamos con expertos que entienden tu visión para hacer realidad un evento único y memorable.
+                    </div>
+                </div>
+                <div class="images-provider">
+                    <img src="assets/images/provider.png" alt="Proveedores expertos" class = "provider-image">
+                </div>
+            </div>
+        </section>
+        <div id="services"  class="separator"></div>
+        <!-- Sección de Servicios -->
+        <section class="services">
+            <div data-i18n="serv1" class="section-header-services">Proveedores expertos asignados a tus necesidades</div>
+            <div class="cards-container">
+                <div class="card">
+                    <div data-i18n="serv2" class="card-title">Bodas</div>
+                    <img src="assets/images/bodas.png" alt="Bodas">
+                    <div data-i18n="serv3" class="card-description">Haz de tu día especial una experiencia inolvidable con los mejores proveedores.</div>
+                </div>
+                <div class="card">
+                    <div data-i18n="serv4" class="card-title">Fiestas infantiles</div>
+                    <img src="assets/images/fiesInfantiles.png" alt="Fiestas infantiles">
+                    <div data-i18n="serv5" class="card-description">Diversión garantizada para los más pequeños, con toda la seguridad que necesitas.</div>
+                </div>
+                <div class="card">
+                    <div data-i18n="serv6" class="card-title">Quinceañeros</div>
+                    <img src="assets/images/quinces.png" alt="Quinceañeros">
+                    <div data-i18n="serv7" class="card-description">Celebra tus 15 años como siempre lo soñaste, con proveedores de confianza.</div>
+                </div>
+                <div class="card">
+                    <div data-i18n="serv8" class="card-title">Eventos corporativos</div>
+                    <img src="assets/images/eventoscoporativos.png" alt="Eventos corporativos">
+                    <div data-i18n="serv9" class="card-description">Impresiona a tus invitados y asegúrate de que todo salga perfecto, sin complicaciones.</div>
+                </div>
+            </div >
+        </section>
+        <div id="Mapa de Nuestros Proovedores" class="separator"></div>
+        <!-- Sección para el mapa interactivo -->
+        <section  class="mapaprov">
+            <div data-i18n="lim1" class="section-header-mapaprov">Proovedores en Lima</div>
+            <p class="info-lim" data-i18n="lim2">Descubre a nuestros proveedores,los cuales estan ubicados en diferentes puntos de Lima, Perú. ¡Encuentra al profesional más cercano a ti y organiza tu evento con facilidad! Instala nuestra app ahora y conecta con proveedores confiables al alcance de un clic. </p>
+            <div class="mapa" id="map" style="height: 400px; width: 100%;"></div>
+        </section>
+
+        <div class="separator"></div>
+        <!--Seccion Descargar app-->
+        <section id="download" class="download">
+            <div data-i18n="down1" class="section-header-download">Descarga la App</div>
+            <div class="download-content">
+                <img src="assets/images/logo2.png" alt="Logo de Celebra">
+                <div>
+                    <p data-i18n="down2" >Disfruta de un evento seguro y correctamente organizado descargando nuestra app</p>
+                    <div class="download-buttons">
+                        <a href="#"><img src="assets/images/googleplay.png" alt="Google Play"></a>
+                        <a href="#"><img src="assets/images/appstore.png" alt="App Store"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Seccion Footer-->
+        <footer>
+            <div class="footer-container">
+                <!-- Sección izquierda del logo y texto -->
+                <div class="logo-container">
+                    <img width="80" src="assets/images/logo1.png" alt="Tu Logo">
+                    <p data-i18n="foot1">Con celebra, encuentra los mejores servicios para tus eventos de manera segura y confiable 24/7.</p>
+                    <p data-i18n="foot2" class="copyright">&copy; 2024 Celebra. Todos los derechos reservados.</p>
+                </div>
+                
+                <!-- Sección derecha de las redes sociales -->
+                <div class="social-media-container">
+                    <h3 data-i18n="cont">Contáctanos:</h3>
+                    <ul class="social-media-icons">
+                        <li><a href="https://www.microsoft.com" target="_blank"><img src="assets/images/microsoft.png" alt="Microsoft" width="24"></a></li>
+                        <li><a href="https://www.facebook.com" target="_blank"><img src="assets/images/facebook.png" alt="Facebook" width="24"></a></li>
+                        <li><a href="https://www.twitter.com" target="_blank"><img src="assets/images/x.png" alt="Twitter" width="24"></a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><img src="assets/images/instagram.png" alt="Instagram" width="24"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        </main>
+        <script src="assets/scripts/main.js"></script>
+    </body>
+</html>

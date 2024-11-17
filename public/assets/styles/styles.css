@@ -4,12 +4,17 @@ body {
     margin: 0;
     /*padding: 0;*/
 }
+
 header {
+
     background-color: #d8b4f2;
     align-items: center;
     display: flex;
-    justify-content: space-between; /* Asegura que los elementos estén distribuidos */ 
+    justify-content: space-between; /* Asegura que los elementos estén distribuidos */
     padding: 0px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegura que el header esté por encima del mapa */
 }
 
 .left-header{
@@ -44,6 +49,8 @@ nav ul li a {
     color: white;
     font-weight: bold;
 }
+
+
 /* Sección principal */
 .principal-images {
     display: flex;
@@ -51,7 +58,7 @@ nav ul li a {
 }
 
 .principal-images img {
-    width: 35%;
+    width: 33.3%;
 }
 
 .central-text {
@@ -376,4 +383,62 @@ p {
     margin-top: 10px;
     font-size: 14px;
     color: #757575;
+}
+
+/*boton internacionalizacion*/
+#languageSwitcher {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#languageSwitcher:hover {
+    border-color: #888;
+    background-color: #fff;
+}
+
+#languageSwitcher:focus {
+    border-color: #555;
+    box-shadow: 0 0 5px rgba(85, 85, 85, 0.5);
+}
+
+#languageSwitcher option {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+}
+
+/*seccion Mapa de proovedores en Lima*/
+.mapaprov {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-header-mapaprov {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #d8b4f2;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.info-lim{
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+}
+
+.mapa { 
+    height: 400px; 
+    width: 100%; 
+    z-index: 1; /* Mantiene el mapa por debajo del header */ 
 }
